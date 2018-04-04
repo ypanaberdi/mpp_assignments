@@ -4,6 +4,10 @@ import java.util.ArrayList;
  
 public class Company {
 	private String name;
+	public String getName() {
+		return name;
+	}
+
 	private ArrayList<Department> departments;
 
 	public String print() {
@@ -22,4 +26,9 @@ public class Company {
 		
 		return d;
 	}
+	
+	public double getSalary(){
+		return departments.stream().map(dep->dep.getSalary()).reduce(.0, (x,y)->x+y);
+	}
+	
 }

@@ -24,6 +24,10 @@ public class Main {
 		itDep.addPosition((new Position("Junior programmer", "Junior programmer position")).setEmp(sam));
 		itDep.addPosition((new Position("Middle programmer", "Middle programmer position")).setEmp(ashton));
 
+		// hierarchy
 		System.out.println(c.print());
+		System.out.println();
+		// total salary
+		System.out.println(String.format("Total salary of the %s company is $%.2f", c.getName(), c.getSalary()));
 	}
 }

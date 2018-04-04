@@ -23,4 +23,8 @@ public class Department {
 		positions = new ArrayList<Position>();
 
 	}
+	
+	public double getSalary(){
+		return positions.stream().map(pos->pos.getSalary()).reduce(.0,(x,y)->x+y);
+	}
 }

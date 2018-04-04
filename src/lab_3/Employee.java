@@ -22,9 +22,10 @@ public class Employee {
 	}
 	
 	public String print(){
-		//return String.format("id:%id. %s %s %s, birthdate: %s, SSN:%s\n, Salary: $%.2f", firstName, middleInitial, lastName, employeeId, "", SSN, salary);
-		
-		return String.format("     id:%d. %s %s %s, birthdate: %s, SSN:%s, Salary: $%.2f", employeeId, firstName, middleInitial, lastName, birthDate, SSN, salary);
-				
+		return String.format("     id:%d. %s %s %s, birthdate: %s, SSN:%s, Salary: $%.2f", employeeId, firstName, middleInitial, lastName, birthDate, SSN, salary);	
+	}
+	
+	public double getSalary(){
+		return salary;
 	}
 }
