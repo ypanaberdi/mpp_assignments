@@ -1,4 +1,4 @@
-package lab_3;
+package lab_3_123;
 
 public class Position {
 	private String title, description;
