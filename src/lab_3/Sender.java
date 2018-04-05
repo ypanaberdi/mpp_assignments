@@ -1,19 +1,34 @@
+package lab_3;
 
 import java.util.*;
 
 /**
  * 
  */
-public interface Sender {
+public abstract class Sender implements SenderI {
 
-    /**
-     * 
-     */
-    private String name;
+	/**
+	 * Default constructor
+	 */
+	public Sender() {
+	}
 
-    /**
-     * 
-     */
-    public Double discount;
+	/**
+	 * 
+	 */
+	private String name;
+
+	/**
+	 * 
+	 */
+	public Double discount;
+
+	/**
+	 * @return
+	 */
+	public double calcDiscount() {
+		// TODO implement here
+		return 0.0d;
+	}
 
 }

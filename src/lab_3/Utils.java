@@ -1,3 +1,5 @@
+package lab_3;
+
 
 import java.util.*;
 
@@ -6,21 +8,10 @@ import java.util.*;
  */
 public class Utils {
 
-    /**
-     * Default constructor
-     */
-    public Utils() {
-    }
-
-    /**
+     /**
      * 
      */
-    public Zones Zones;
-
-    /**
-     * 
-     */
-    public enum Zones {
+    public enum Zones { AL,MT,AK,NE,AZ,NV,AR,NH,CA,NJ,CO,NM,CT,NY,DE,NC,FL,ND,GA,OH,HI,OK,ID,OR,IL,PA,IN,RI,IA,SC,KS,SD,KY,TN,LA,TX,ME,UT,MD,VT,MA,VA,MI,WA,MN,WV,MS,WI,MO,WY
     }
 
 }

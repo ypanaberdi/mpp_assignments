@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class FedEx extends Carrier {
+public class USmail extends Carrier {
 
     /**
      * Default constructor
      */
-    public FedEx() {
+    public USmail() {
     }
 
 }

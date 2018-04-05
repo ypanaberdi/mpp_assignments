@@ -1,31 +1,53 @@
+package lab_3;
+
 
 import java.util.*;
 
 /**
  * 
  */
-public interface Carrier extends Carrier {
+public abstract class Carrier {
 
     /**
      * 
      */
-    private String nsame;
+    private String name = "";
 
     /**
      * 
      */
-    private Package package;
+    private ArrayList<Package> packages;
 
     /**
      * 
      */
-    private Student sender;
+    private Sender sender;
+
 
 
 
     /**
      * @return
      */
-    public Double calcCost();
+    public abstract Double calcCost();
+
+    public Carrier(String name) {
+		super();
+		this.name = name;
+		this.packages = new ArrayList<Package>();
+	}
+
+	/**
+     * @return
+     */
+    public boolean addPackage(Package pkg){
+    	return packages.add(pkg);
+    }
+
+    /**
+     */
+    public void setSender(Sender snd){
+    	sender = snd;
+    }
 
 }

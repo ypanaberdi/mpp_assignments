@@ -1,15 +1,15 @@
-package lab_3;
+
 import java.util.*;
 
 /**
  * 
  */
-public class FedEx extends Carrier {
+public class Veterans extends Sender {
 
     /**
      * Default constructor
      */
-    public FedEx() {
+    public Veterans() {
     }
 
 }
