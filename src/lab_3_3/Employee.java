@@ -1,4 +1,4 @@
-package lab_3_123;
+package lab_3_3;
 
 import java.time.LocalDate;
 
@@ -27,5 +27,13 @@ public class Employee {
 	
 	public double getSalary(){
 		return salary;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
 	}
 }
