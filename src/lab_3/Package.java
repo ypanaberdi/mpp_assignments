@@ -1,33 +1,39 @@
 package lab_3;
-import java.util.*;
+
+
 
 import lab_3.Utils.Zones;
 
-/**
- * 
- */
 public class Package {
+	private Zones zone;
 
-    /**
-     * Default constructor
-     */
-    public Package() {
-    }
+	public Package( String description,  double weight, Zones zone) {
+		super();
+		this.weight = weight;
+		this.description = description;
+		this.zone = zone;
+	}
 
-    /**
-     * 
-     */
-    private double weight;
+	/**
+	 * 
+	 */
+	private double weight;
 
-    /**
-     * 
-     */
-    private String description;
+	public double getWeight() {
+		return weight;
+	}
 
-    /**
-     * 
-     */
-    private Zones zone;
+	/**
+	 * 
+	 */
+	private String description;
 
+	public String getDescription() {
+		return description;
+	}
+
+	public Zones getZone() {
+		return zone;
+	}
 
 }

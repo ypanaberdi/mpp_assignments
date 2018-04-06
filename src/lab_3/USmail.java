@@ -1,15 +1,23 @@
 package lab_3;
-import java.util.*;
+
 
 /**
  * 
  */
 public class USmail extends Carrier {
+	private double rate = 0.55;
+	private double defaultRate = 1;
 
-    /**
-     * Default constructor
-     */
-    public USmail() {
-    }
+	public USmail(String name) {
+		super(name);
+	}
+
+	@Override
+	public Double calcCost() {
+		if (this.getPackageItem().getWeight() > 3)
+			return this.getPackageItem().getWeight() * rate;
+		else
+			return defaultRate*getPackageItem().getWeight();
+	}
 
 }

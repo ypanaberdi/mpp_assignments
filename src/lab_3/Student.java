@@ -1,12 +1,18 @@
 package lab_3;
-import java.util.*;
 
 /**
  * 
  */
 public class Student extends Sender {
+	private double discount = 0.10;
+    
+	@Override
+	public double calcDiscount() {
+		// TODO Auto-generated method stub
+		return discount;
+	}
 
-    /**
+	/**
      * Default constructor
      */
     public Student() {

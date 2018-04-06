@@ -1,53 +1,58 @@
 package lab_3;
 
-
-import java.util.*;
-
 /**
  * 
  */
 public abstract class Carrier {
 
-    /**
-     * 
-     */
-    private String name = "";
+	/**
+	 * 
+	 */
+	private String name = "";
 
-    /**
-     * 
-     */
-    private ArrayList<Package> packages;
+	/**
+	 * 
+	 */
+	private Package packageItem;
 
-    /**
-     * 
-     */
-    private Sender sender;
+	/**
+	 * 
+	 */
+	private Sender sender;
 
-
-
-
-    /**
-     * @return
-     */
-    public abstract Double calcCost();
-
-    public Carrier(String name) {
-		super();
-		this.name = name;
-		this.packages = new ArrayList<Package>();
+	public Sender getSender() {
+		return sender;
 	}
 
 	/**
-     * @return
-     */
-    public boolean addPackage(Package pkg){
-    	return packages.add(pkg);
-    }
+	 * @return
+	 */
+	public abstract Double calcCost();
 
-    /**
-     */
-    public void setSender(Sender snd){
-    	sender = snd;
-    }
+	public Carrier(String name) {
+		super();
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public Package getPackageItem() {
+		return packageItem;
+	}
+
+	/**
+	 * @return
+	 */
+	public void setPackage(Package pkg) {
+		packageItem = pkg;
+	}
+
+	/**
+	 */
+	public void setSender(Sender snd) {
+		sender = snd;
+	}
 
 }
