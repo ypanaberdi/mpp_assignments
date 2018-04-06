@@ -1,12 +1,11 @@
 package lab_3;
 
-import java.util.*;
 
 /**
  * 
  */
 public abstract class Sender implements SenderI {
-
+	
 	/**
 	 * Default constructor
 	 */
@@ -21,13 +20,13 @@ public abstract class Sender implements SenderI {
 	/**
 	 * 
 	 */
-	public Double discount;
+	public double discount = 0.0;
 
 	/**
 	 * @return
 	 */
 	public double calcDiscount() {
-		// TODO implement here
+		
 		return 0.0d;
 	}
 

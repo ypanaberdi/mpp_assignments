@@ -1,11 +1,10 @@
 package lab_3;
-import java.util.*;
 
 /**
  * 
  */
 public class DHL extends Carrier {
-
+	Double defaultRate = 0.60;
     /**
      * Default constructor
      */
@@ -15,8 +14,7 @@ public class DHL extends Carrier {
 
 	@Override
 	public Double calcCost() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.getPackageItem().getWeight()*defaultRate;
 	}
 
 }

@@ -1,33 +1,20 @@
 package lab_3;
-import java.util.*;
 
 /**
  * 
  */
-public class UPS implements Carrier {
-
-    /**
+public class UPS extends Carrier {
+	private double defaultRate = 0.45;
+	/**
      * Default constructor
      */
-    public UPS() {
+    public UPS(String name) {
+    	super(name);
     }
 
 	@Override
 	public Double calcCost() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.getPackageItem().getWeight()*defaultRate;
 	}
-
-	@Override
-	public boolean addPackage() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean setSender() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
+ 
 }
