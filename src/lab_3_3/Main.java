@@ -1,5 +1,6 @@
 package lab_3_3;
 
+import java.net.DatagramPacket;
 import java.time.LocalDate;
 
 public class Main {
@@ -48,9 +49,15 @@ public class Main {
 		salesDep.addPosition(salesIntern5.setEmp(bill));
 		
 
-		// hierarchy
-		//System.out.println(c.print());
-		// total salary
+		
+		// Hierarchy from the top
 		System.out.println(String.format("Hierarhy for %s: %s",c.getName(), top.printDownLine("  ")));
+		
+		// Printing through all departments
+		String outV = c.getDepartments().stream().map(dep->dep.printReportingHierarchy()).reduce("", (s1, s2)-> s1+s2);
+		System.out.println(outV);
+		
+		// from the company
+		c.printReportingHierarchy();
 	}
 }

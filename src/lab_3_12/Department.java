@@ -27,4 +27,11 @@ public class Department {
 	public double getSalary(){
 		return positions.stream().map(pos->pos.getSalary()).reduce(.0,(x,y)->x+y);
 	}
+	
+	public boolean equals(Department d){
+		if(name!=d.name)
+			return false;
+		
+		return true;
+	}
 }

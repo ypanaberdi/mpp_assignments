@@ -66,4 +66,10 @@ public class Position {
 	public double getSalary() {
 		return emp == null ? .0 : emp.getSalary();
 	}
+
+	public Position getSuperior() {
+		return superior;
+	}
+
+	
 }
