@@ -1,16 +1,19 @@
 package lab_5_1;
 
 public class Hourly extends Employee{
-
-	public Hourly(String empId) {
+	double hourlyWage;
+	int hoursPerWeek;
+	public Hourly(String empId, double hourlyWage, int hoursPerWeek) {
 		super(empId);
-		// TODO Auto-generated constructor stub
+		this.hourlyWage = hourlyWage;
+		this.hoursPerWeek = hoursPerWeek;		
 	}
 
-	@Override
-	public DateRange calcGrossPay() {
-		// TODO Auto-generated method stub
-		return null;
+	public double calcGrossPay(DateRange dr) {
+		
+		
+		
+		return hourlyWage * hoursPerWeek*4;
 	}
 
 }

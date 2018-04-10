@@ -1,16 +1,16 @@
 package lab_5_1;
 
 public class Salaried  extends Employee{
-
-	public Salaried(String empId) {
+	private double salary; 
+	public Salaried(String empId, double sal) {
 		super(empId);
-		// TODO Auto-generated constructor stub
+		salary = sal;
 	}
 
-	@Override
-	public DateRange calcGrossPay() {
-		// TODO Auto-generated method stub
-		return null;
+	public double calcGrossPay(DateRange dr) {
+		
+		
+		return salary;
 	}
 
 }
